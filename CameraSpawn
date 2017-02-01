@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraSpawn : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+		transform.localPosition = new Vector3 (6f,9f,6f);
+		Rigidbody rig = transform.GetComponent<Rigidbody>();
+		rig.useGravity = false;
+		rig.isKinematic = true;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
